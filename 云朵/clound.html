@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		:root,body{
+			width:100%;
+			height:100%;
+		}
+		.wrapper{
+			width:100%;
+			height:100%;
+			background-image: linear-gradient(#1bc2e8,#fff);
+			overflow: hidden;
+		}
+		.wrapper .title{
+			width:100%;
+			height:40px;
+			font-size: 30px;
+			color:#ff0;
+			text-align: center;
+			line-height: 40px;
+		}
+		@keyframes opacitys{
+			0%{
+				opacity: 1;
+			}
+			50%{
+				opacity: 0.5;
+			}
+			70%{
+				opacity: 0.1;
+			}
+			90%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
+		@keyframes run{
+			0%{
+			
+				top:100px;
+				left:100px;
+			}
+			100%{
+
+				top:100px;
+				left:1300px;
+			}
+		}
+		@keyframes rain{
+			0%{
+				top:0px;
+				left:0px;
+			}
+			100%{
+				top:500px;
+				left:0px;
+			}
+		}
+		.wrapper .clound1{
+			position: absolute;
+			top:100px;
+			left:200px;
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: -28px -9px 0px 0px #fff,
+			5px -26px 0px 0px #fff,
+			33px -15px 0px 0px #fff,
+			24px 1px 0px -4px #fff,
+			-28px -9px 0px 0px #fff;
+			animation:run 20s linear 2s infinite alternate,opacitys 2s linear;
+			 
+		}
+		.wrapper .clound2{
+			position: absolute;
+			top:150px;
+			left:400px;
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: -30px -9px 0px 2px #fff,
+			10px -26px 0px 3px #fff,
+			33px -15px 0px 3px #fff,
+			24px 1px 0px -4px #fff,
+			-28px -9px 0px 0px #fff;
+			animation:run 20s linear 7s infinite alternate,opacitys 2s linear 5s;
+
+		}
+		.wrapper .clound3{
+			position: absolute;
+			top:80px;
+			left:700px;
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: -28px -9px 0px 5px #fff,
+			5px -26px 0px 6px #fff,
+			33px -15px 0px 0px #fff,
+			24px 1px 0px -4px #fff,
+			-28px -9px 0px 5px #fff;
+			animation:run 20s linear 12s infinite alternate,opacitys 2s linear 10s;
+
+		}
+		.wrapper .clound4{
+			position: absolute;
+			top:120px;
+			left:950px;
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: -28px -9px 0px 5px #fff,
+			5px -26px 0px 6px #fff,
+			33px -15px 0px 0px #fff,
+			24px 1px 0px -4px #fff,
+			-28px -9px 0px 5px #fff;
+			animation:run 20s linear 18s infinite alternate,opacitys 2s linear 16s;
+
+		}
+		.rain{
+			width:5px;
+			height:5px;
+			border-radius: 50%;
+			background-color: #fff;
+			position: absolute;
+			
+		}
+		.rain1{
+			top:0px;
+			left:0px;
+			box-shadow: 30px 20px 0px 0px #fff,
+			60px 0px 0px 0px #fff;
+			animation:rain .8s cubic-bezier(0,0,1,1)  infinite;
+		}
+		.rain2{
+			top:0px;
+			left:30px;
+			box-shadow: 30px 20px 0px 0px #fff,
+			60px 0px 0px 0px #fff;
+			animation:rain .8s cubic-bezier(0,0,1,1) 0.2s infinite;
+		}
+		.rain3{
+			top:0px;
+			left:60px;
+			box-shadow: 30px 20px 0px 0px #fff,
+			60px 0px 0px 0px #fff;
+			animation:rain .8s cubic-bezier(0,0,1,1) 0.5s infinite;
+		}
+		.wrapper .shadow{
+			width:50px;
+			height:50px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">snowy</div>
+		<div class="clound1">
+			<div class= "rain rain1"></div>
+			<div class= "rain rain2"></div>
+			<div class= "rain rain3"></div>
+		</div>
+		<div class="clound2">
+			<div class= "rain rain1"></div>
+			<div class= "rain rain2"></div>
+			<div class= "rain rain3"></div>
+		</div>
+		<div class="clound3">
+			<div class= "rain rain1"></div>
+			<div class= "rain rain2"></div>
+			<div class= "rain rain3"></div>
+		</div>
+		<div class="clound4">
+			<div class= "rain rain1"></div>
+			<div class= "rain rain2"></div>
+			<div class= "rain rain3"></div>
+		</div>
+		
+		<div class="shadow">
+			
+		</div>
+		
+	</div>
+</body>
+</html>

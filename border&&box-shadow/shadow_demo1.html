@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0px;
+			margin:0px;
+
+		}
+		body{
+			background-color: #000;
+		}
+		.sphere{
+			position: absolute;
+			top:calc(50% - 250px);
+			left:calc(30% - 250px);
+			width:500px;
+			height: 500px;
+		    /*border:1px solid #fff;*/
+			border-radius:50%;
+			box-shadow: inset 0px 0px 50px 0px #fff,
+			 			inset 10px 0px 80px 0px #f0f,
+			 			inset -10px 0px 80px 0px #0ff,
+			 			inset 10px 0px 300px 0px #f0f,
+			 			inset -10px 0px 300px 0px #0ff,
+			 			0px 0px 50px 0px #fff,
+			 			-10px 0px 80px 0px #f0f,
+			 			10px 0px 80px 0px #0ff
+		}
+		.sun{
+			position: absolute;
+			top:calc(50% - 25px);
+			right:calc(20% -  25px);
+			width:50px;
+			height:50px;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0px 0px 100px 50px #fff,
+						0px 0px 250px 120px #ff0
+		}
+	</style>
+</head>
+<body>
+	<div class="sphere">
+		
+	</div>
+	<div class = "sun"></div>
+</body>
+</html>

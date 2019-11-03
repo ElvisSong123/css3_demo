@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #abcdef;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 38%;
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper .show {
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.wrapper .picWar {
+    transform-style: preserve-3d;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
+    /* border: 10px solid black */
+    /* transform-origin: 0px 0px; */
+    perspective-origin: center;
+    /* perspective: 800px; */
+    transition: all 0.2s linear;
+}
+
+.wrapper .picWar .img1 {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transform: rotatey(0deg) translateZ(75px);
+    /* transition: all 0.5s linear; */
+}
+
+.wrapper .picWar .img2 {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* transform-origin: 0px 0px; */
+    transform: rotateY(-90deg) translatez(75px);
+    /* transition: all 0.5s linear; */
+}
